@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(240, 240, 240);
+    font-family: 'Oswald', sans-serif;
+    margin:0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+header img{
+    padding-left: 1em;
+    height: 4em;
+}
+
+header input{
+    width: 20em;
+    height:2em;
+    margin: auto;
+}
+
+header a{
+    color: white;
+    padding-right: 2em;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: underline;
+    font-weight:800;
+}
+
+nav{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: lightgray;
+    width: 100%;
+    margin:auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h1{
+    padding-top: 1em;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+p{
+    text-align: center;
+}
+
+button{
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+

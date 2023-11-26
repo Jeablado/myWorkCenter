@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My work center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="scripts/script.js" defer></script>
+
+
+</head>
+<body>
+    <header>
+        <img src="pictures/logo3.png">
+        <input id="searchbar" onkeyup="my_function_js()" type="text"
+        name="search" placeholder="Research">
+        <a href="#login">Login</a>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="">Mes notes</a>
+        <a href="mon_agenda.html">Mon agenda</a>
+        <a href="">Mes textes</a>
+    </nav>
+    <main>
+        <form  class="login" id="login">
+            <fieldset>
+                <legend>Identifiants</legend>
+                <label for="userName"> Nom d'utilisateur : </label>
+                <input id="userName" type="text" name="Username" placeholder="User name" required>
+                <br>
+                <label for="psswd"> Mot de passe : </label>
+                <input id="psswd" type="text" name="psswd" placeholder="Password" required>
+                <br>
+                <button id="btnlog">Login</button>
+            </fieldset>
+        </form>
+    </main>
+    
+</body>
+</html>

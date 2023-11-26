@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My work center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/mon_agenda.css">
+    <script src="scripts/script.js" defer></script>
+    <script type="module" src="/scripts/mon_agenda.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <img src="pictures/logo3.png">
+        <input id="searchbar" onkeyup="my_function_js()" type="text"
+        name="search" placeholder="Research">
+        <a href="login.html">Login</a>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="">Mes notes</a>
+        <a href="">Mon agenda</a>
+        <a href="">Mes textes</a>
+    </nav>
+    <main>
+        <section class="section_filtres">
+            <h1>Filtres</h1>
+            <div class="filtres">
+                <ul>
+                    <li class="menu-deroulant">
+                      <a>Trier par </a>
+                      <ul class="sous-menu">
+                        <li><a href="" id="proche">Proche - Lointain</a></li>
+                        <li><a href="" id="lointain">Lointain - Proche</a></li>
+                      </ul>
+                    </li>
+                </ul>
+                <fieldset>
+                    <legend>Importance:</legend>
+                  
+                    <div>
+                      <input type="checkbox" id="high" name="high" class="checkbox_importance" checked />
+                      <label for="high">High</label>
+                    </div>
+                  
+                    <div>
+                        <input type="checkbox" id="normal" name="normal" class="checkbox_importance" checked />
+                        <label for="normal">Normal</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="low" name="low" class="checkbox_importance" checked />
+                        <label for="low">Low</label>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Type:</legend>
+                  
+                    <div>
+                      <input type="checkbox" id="prive" name="prive" checked />
+                      <label for="prive">Privé</label>
+                    </div>
+                  
+                    <div>
+                        <input type="checkbox" id="admin" name="admin" checked />
+                        <label for="admin">Administratif</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="medical" name="medical" checked />
+                        <label for="medical">Médical</label>
+                    </div>
+                  </fieldset>
+            </div>
+        </section>
+        <section class="section_rdv">
+            <h1>Votre agenda</h1>
+            <div class="prochains_rdv">
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
